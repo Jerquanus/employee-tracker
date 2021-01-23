@@ -11,9 +11,10 @@ CREATE TABLE department (
   PRIMARY KEY (id)
 );
 
--- CREATE TABLE role (
---   id INT NOT NULL AUTO_INCREMENT,
---   title VARCHAR(100) NOT NULL,
---   salary
---   PRIMARY KEY (id)
--- );
+CREATE TABLE role (
+  id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(100) NOT NULL,
+  salary
+  department_id 
+  PRIMARY KEY (id)
+);
