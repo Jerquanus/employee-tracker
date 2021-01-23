@@ -14,7 +14,7 @@ CREATE TABLE department (
 CREATE TABLE role (
   id INT NOT NULL AUTO_INCREMENT,
   title VARCHAR(100) NOT NULL,
-  salary
+  salary DECIMAL(10,4) NULL,
   department_id 
   PRIMARY KEY (id)
 );
