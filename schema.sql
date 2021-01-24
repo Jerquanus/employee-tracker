@@ -6,15 +6,16 @@ USE employeeTrackerDB;
 
 /* Create new table with a primary key that auto-increments, and a text field */
 CREATE TABLE department (
-  id INT NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL,
   name VARCHAR(100) NOT NULL,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE role (
-  id INT NOT NULL AUTO_INCREMENT,
+  
   title VARCHAR(100) NOT NULL,
   salary DECIMAL(10,4) NULL,
-  department_id 
-  PRIMARY KEY (id)
+  department_id VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (department_id ) REFERENCES department(id))
 );
